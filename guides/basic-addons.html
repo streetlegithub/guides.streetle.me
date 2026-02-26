@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>basic addon setup - streetle's guides</title>
+  <meta name="theme-color" content="#0f1115" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="basic addon setup - streetle's guides" />
+  <meta property="og:description" content="install and configure a minimal set of stremio addons to get streaming quickly." />
+  <meta name="description" content="install and configure a minimal set of stremio addons to get streaming quickly." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://guides.streetle.me/guides/basic-addons.html" />
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="canonical" href="https://guides.streetle.me/guides/basic-addons.html" />
+  <link rel="preload" href="../assets/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles/fonts.css" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+</head>
+
+<body>
+  <a href="../" class="back-link" aria-label="Back to all guides">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 5l-7 7 7 7" />
+    </svg>
+    all guides
+  </a>
+
+  <header class="guide-hero">
+    <div class="guide-hero__tag">
+      <span class="guide-hero__tag-dot"></span>
+      addons
+    </div>
+    <h1 class="guide-hero__title">basic addon setup</h1>
+    <div class="guide-hero__meta">
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        5 min read
+      </span>
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        feb 2026
+      </span>
+    </div>
+  </header>
+
+  <article class="guide-article">
+
+    <h2>overview</h2>
+    <p>learn how to install and configure basic stremio addons (for new users).</p>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/empty-addons.png" alt="stremio addons interface showing cinemeta installed" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">stremio's addon management interface</figcaption>
+    </figure>
+    <div class="guide-callout">
+      <strong>note:</strong> you may have other default addons installed, cinemeta is the only required addon for stremio to function.<br><br>there are <a href="https://cinebye.elfhosted.com/">websites that can force the removal of cinemeta</a>, but this can have negative consequences if you do not make a backup. use with caution.
+    </div>
+        
+    <h3>before you begin</h3>
+    <p>addons have basic functionality and can only do so much. addons cannot theme your stremio or add completely new features.</p><p>addons can add catalogs, metadata and streaming sources.</p>
+    <p>you may need a debrid service <a href="https://www.reddit.com/r/TPB/comments/fefeam/countries_that_dont_care_about_piracy/">depending on the country you live in</a>, it is also generally recommended for stable streams that don't require torrenting.</p>
+    <p>follow the <a href="debrid.html">debrid guide</a> to get started with debrid services.</p>
+    <div class="guide-callout">
+      <strong>note:</strong> all (good) debrid services cost money.
+    </div>
+
+    <h2>recommended addons</h2>
+
+    <p>all addons listed can be used with and without a debrid service.</p>
+
+    <h3><a href="https://torrentio.strem.fun/">torrentio</a></h3>
+    <p>the most popular addon for finding torrents in stremio<br><br>can often have <a href="https://status.stremio-status.com/endpoints/01--general-scrapers_!-torrentio"></a>downtime</a> due to being so popular.<br><br>blocks <a href="https://www.reddit.com/r/StremioAddons/comments/1lmju7h/torrentio_not_working_with_vpn/">most vpns</a> and <a href="https://www.reddit.com/r/StremioAddons/comments/1nc13f0/aiostreams_torrentio_still_down/">vps ip addresses</a> to reduce load.</p>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio.png" alt="torrentio addon interface" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio addon interface, purely for reference.</figcaption>
+    </figure>
+
+  <p>for a detailed explanation of what each setting does, see the <a href="torrentio.html">torrentio guide</a>.</p>
+
+    <h3><a href="https://comet.feels.legal/">comet</a></h3>
+    <p>comet is another popular addon for adding streaming sources to stremio.</p>
+
+    <p>has a lot less downtime than torrentio, but produces fewer results and may not find more niche content.</p>
+
+      <figure class="guide-figure">
+      <img src="../assets/images/comet.png" alt="comet addon interface" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">comet addon interface, purely for reference.</figcaption>
+    </figure>
+
+  <p>for a detailed explanation of what each setting does, see the <a href="comet.html">comet guide</a>.</p>
+
+    <h3><a href="https://debridio.com/addons/debridio">debridio scraper</a></h3>
+    <p>debridio is a premium option for scrapers. it almost never has downtime and is more reliable than other scrapers, but requires a $10 yearly subscription.</p>
+
+      <figure class="guide-figure">
+        <img src="../assets/images/debridio.png" alt="debridio scraper addon interface" loading="lazy" decoding="async" />
+        <figcaption class="guide-figure__caption">debridio scraper addon interface, purely for reference.</figcaption>
+      </figure>
+
+  <p>for a detailed explanation of what each setting does, see the <a href="debridio.html">debridio guide</a>.</p>
+
+    <h2>summary</h2>
+    <ul>
+      <li>torrentio is the most popular addon for finding torrents in stremio.</li>
+      <li>comet is a good alternative to torrentio with less downtime.</li>
+      <li>debridio scraper is a premium option with high reliability.</li>
+    </ul>
+
+    <p>for more information on configuring these addons, see the <a href="torrentio.html">torrentio guide</a>, <a href="comet.html">comet guide</a>, and <a href="debridio.html">debridio guide</a>.</p>
+    <p>if you are an advanced user, you may want to consider using <a href="aiostreams.html">aiostreams</a>.</p>
+
+  </article>
+
+  <nav class="guide-nav" aria-label="Guide navigation">
+    <a href="getting-started.html" class="guide-nav__link">
+      <span class="guide-nav__label">previous guide</span>
+      <span class="guide-nav__title">getting started with stremio</span>
+    </a>
+    <a href="torrentio.html" class="guide-nav__link guide-nav__link--next">
+      <span class="guide-nav__label">next guide</span>
+        <span class="guide-nav__title">torrentio guide</span>
+    </a>
+  </nav>
+
+  <footer class="site-footer">
+    <a href="https://streetle.me">streetle.me</a> · guides
+  </footer>
+
+  <script src="../scripts/app.js" defer></script>
+</body>
+
+</html>

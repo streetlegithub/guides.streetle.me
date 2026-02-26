@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>torrentio - streetle's guides</title>
+  <meta name="theme-color" content="#0f1115" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="torrentio - streetle's guides" />
+  <meta property="og:description" content="guide to using the torrentio addon with stremio." />
+  <meta name="description" content="guide to using the torrentio addon with stremio." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://guides.streetle.me/guides/torrentio.html" />
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="canonical" href="https://guides.streetle.me/guides/torrentio.html" />
+  <link rel="preload" href="../assets/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles/fonts.css" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+</head>
+
+<body>
+  <a href="../" class="back-link" aria-label="Back to all guides">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 5l-7 7 7 7" />
+    </svg>
+    all guides
+  </a>
+
+  <header class="guide-hero">
+    <div class="guide-hero__tag">
+      <span class="guide-hero__tag-dot"></span>
+      addons
+    </div>
+    <h1 class="guide-hero__title">torrentio</h1>
+    <div class="guide-hero__meta">
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        10 min read
+      </span>
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        feb 2026
+      </span>
+    </div>
+  </header>
+
+  <article class="guide-article">
+
+    <h2>overview</h2>
+    <p>torrentio is a the most popular stremio addon. it fetches torrents from various sources and allows you to stream them directly within stremio.</p>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio.png" alt="torrentio addon interface" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio addon interface</figcaption>
+    </figure>
+
+    <h3>before you begin</h3>
+    <p>you may need a debrid service <a href="https://www.reddit.com/r/TPB/comments/fefeam/countries_that_dont_care_about_piracy/">depending on the country you live in</a>, it is also generally recommended for stable streams that don't require torrenting.</p>
+    <p>follow the <a href="debrid.html">debrid guide</a> to get started with debrid services.</p>
+    <div class="guide-callout">
+      <strong>note:</strong> all (good) debrid services cost money.
+    </div>
+
+    <h2>configuration steps</h2>
+
+    <div class="guide-step">
+      <div class="guide-step__number">1</div>
+      <div class="guide-step__content">
+        <p>navigate to the <a href="https://torrentio.strem.fun/configure">torrentio configuration page</a>.</p>
+      </div>
+    </div>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/config.png" alt="torrentio configuration page" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio configuration page</figcaption>
+    </figure>
+
+    <div class="guide-step">
+      <div class="guide-step__number">2</div>
+      <div class="guide-step__content">
+        <p>optional step - select your debrid provider and enter your API key.</p>
+      </div>
+    </div>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/debrid.png" alt="torrentio debrid configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio debrid configuration</figcaption>
+    </figure>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/debrid-api.png" alt="torrentio debrid API key configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio debrid API key configuration</figcaption>
+    </figure>
+
+    <div class="guide-step">
+      <div class="guide-step__number">3</div>
+      <div class="guide-step__content">
+        <p>configure quality filters and sorting options.</p>
+      </div>
+    </div>
+
+    <p>for example if your device is only capable of 1080p, exclude the 4k option in the quality filter.</p>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/quality.png" alt="torrentio quality and sorting configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio quality and sorting configuration</figcaption>
+    </figure>
+
+    <div class="guide-step">
+      <div class="guide-step__number">4</div>
+      <div class="guide-step__content">
+        <p>install the configured addon to stremio.</p>
+      </div>
+    </div>
+
+    <figure class="guide-figure">
+      <video controls preload="metadata" poster="../assets/images/torrentio/installation.png">
+        <source src="../assets/videos/torrentio-installation.webm" type="video/webm" />
+        your browser does not support the video tag.
+      </video>
+      <figcaption class="guide-figure__caption">video walkthrough of the install process</figcaption>
+    </figure>
+
+    <h2>settings overview</h2>
+    <p>torrentio exposes a variety of options in its settings panel. below is a brief description of each setting.</p>
+
+    <h3>providers</h3>
+    <p>select the torrent providers you want to use, these are like a list of sources that torrentio will search through. it is best to leave all providers enabled to maximize the number of available streams.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/providers.png" alt="torrentio providers configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio providers configuration</figcaption>
+    </figure>
+
+    <h3>sorting</h3>
+    <p>choose how torrentio should sort results. depending on your setup (debrid or no debrid) this will differ.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/sorting.png" alt="torrentio sorting configuration" loading="lazy" decoding="async"/>
+      <figcaption class="guide-figure__caption">torrentio sorting configuration</figcaption>
+    </figure>
+    <p><strong>sorting by quality then seeders</strong> will prioritize higher quality torrents, then the number of seeders.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/qualitythenseeders.png" alt="torrentio sorting by quality then seeders" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:50%;" />
+      <figcaption class="guide-figure__caption">torrentio sorting by quality then seeders</figcaption>
+    </figure>
+    <p><strong>sorting by quality then size</strong> will prioritize higher quality torrents, then the size of the torrent (smaller torrents are generally seeded more and will work better on a slow connection, use this option carefully).</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/qualitythensize.png" alt="torrentio sorting by quality then size" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:50%;"/>
+      <figcaption class="guide-figure__caption">torrentio sorting by quality then size</figcaption>
+    </figure>
+    <p><strong>sorting by seeders</strong> will prioritize torrents with more seeders (more people sharing the torrent). this is best for a configuration without a debrid service that "just works"</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/seeders.png" alt="torrentio sorting by seeders" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:50%;"/>
+      <figcaption class="guide-figure__caption">torrentio sorting by seeders</figcaption>
+    </figure>
+    <p><strong>sorting by size</strong> will prioritize larger torrents, which are generally higher quality but less seeded and may be slower to start or buffer during playback on slower connections.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/size.png" alt="torrentio sorting by size" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:50%;"/>
+      <figcaption class="guide-figure__caption">torrentio sorting by size</figcaption>
+    </figure>
+    <div class="guide-callout">
+          <strong>seeders:</strong> seeders are the number of people sharing the torrent, more seeders generally means a more stable stream.<br><br><strong>note:</strong> if you use a debrid service, sorting by seeders is irrelevant as the debrid provider likely has the highest quality stream cached already
+    </div>
+
+    <h3>debrid provider</h3>
+    <p>select the debrid service you wish to use (real-debrid, torbox, etc.) or select "none" if you do not use one. a debrid service will be more stable as it doesn't require you to download via torrenting.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/debrid.png" alt="torrentio debrid configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio debrid configuration</figcaption>
+    </figure>
+
+    <p>for more information on debrid services, see the <a href="debrid.html">debrid guide</a>.</p>
+
+    <h3>API key</h3>
+    <p>enter your debrid account API key. this field is required when a provider is selected; otherwise torrentio will be unable to use debrid services.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/debrid-api.png" alt="torrentio debrid API key configuration" loading="lazy" decoding="async"/>
+      <figcaption class="guide-figure__caption">torrentio debrid API key configuration</figcaption>
+    </figure>
+
+    <h4>don't show download to debrid links</h4>
+    <p>this will show cached results only. this is hit or miss depending on your debrid provider's api (real-debrid no longer has a reliable way to see if a result is cached).</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/downloadtodebrid.png" alt="torrentio don't show download to debrid links" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:75%;"/>
+      <figcaption class="guide-figure__caption">rd download means the download (most likely) is not cached</figcaption>
+    </figure>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/torrentdownloading.png" alt="torrentio torrent downloading" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:75%;"/>
+      <figcaption class="guide-figure__caption">you will see this message when torrentio has sent a request to your debrid service to begin downloading this torrent.<br><br>if there are not enough seeders, the torrent may never be downloaded. you can check the progress in your debrid service's dashboard.</figcaption>
+    </figure>
+
+    <h4>dont show debrid catalog</h4>
+    <p>the debrid catalog can be found at the bottom of your stremio homepage, and will display a list of <strong>all torrents</strong> that have been downloaded from your debrid service recently. this is not stremio-account specific.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/debridcatalog.png" alt="torrentio debrid catalog" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:75%;"/>
+      <figcaption class="guide-figure__caption">torrentio debrid catalog</figcaption>
+    </figure>
+    <p>if you encounter issues with specific settings, retrace your steps above, make a reddit post on <a href="https://www.reddit.com/r/StremioAddons/" target="_blank">r/StremioAddons</a> or <a href="https://discord.gg/FnnxuAAj" target="_blank">contact me on discord</a> and i'll attempt to help (no promises).</p>
+
+  </article>
+
+  <nav class="guide-nav" aria-label="Guide navigation">
+    <a href="best-addons.html" class="guide-nav__link">
+      <span class="guide-nav__label">previous guide</span>
+      <span class="guide-nav__title">best stremio addons</span>
+    </a>
+    <a href="aio-setup.html" class="guide-nav__link guide-nav__link--next">
+      <span class="guide-nav__label">next guide</span>
+      <span class="guide-nav__title">stremio all-in-one setup</span>
+    </a>
+  </nav>
+
+  <footer class="site-footer">
+    <a href="https://streetle.me">streetle.me</a> · guides
+  </footer>
+
+  <script src="../scripts/app.js" defer></script>
+</body>
+
+</html>

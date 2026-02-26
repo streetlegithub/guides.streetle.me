@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>streetle's guides</title>
+  <meta name="theme-color" content="#0f1115" />
+  <meta name="color-scheme" content="dark" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="streetle's guides" />
+  <meta property="og:description" content="guides & tutorials by streetle" />
+  <meta name="description" content="guides & tutorials by streetle" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://guides.streetle.me/" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="streetle's guides" />
+  <meta name="twitter:description" content="guides & tutorials by streetle" />
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://guides.streetle.me/" />
+  <link rel="preload" href="assets/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles/fonts.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+</head>
+
+<body>
+  <!-- Back to main site -->
+  <a href="https://streetle.me" class="back-link" aria-label="Back to streetle.me">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 5l-7 7 7 7" />
+    </svg>
+    streetle.me
+  </a>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1 class="hero-title">streetle's guides</h1>
+    <p class="hero-subtitle">stremio tutorials and info</p>
+  </header>
+
+  <!-- Main content -->
+  <main class="site-main">
+    <div class="section-header">
+      <h2 class="section-title">all guides</h2>
+      <div class="filter-bar" role="group" aria-label="Filter guides by category">
+        <button class="filter-btn active" data-filter="all" type="button">all</button>
+        <button class="filter-btn" data-filter="addons" type="button">addons</button>
+        <button class="filter-btn" data-filter="general" type="button">general</button>
+      </div>
+    </div>
+
+    <div class="guides-grid">
+
+      <!-- Guide 1: getting started with stremio -->
+      <a href="guides/getting-started.html" class="guide-card" data-tags="general" aria-label="Read guide: getting started with stremio">
+        <div class="guide-card__tag">
+          <span class="guide-card__tag-dot"></span>
+          general
+        </div>
+        <h3 class="guide-card__title">getting started with stremio</h3>
+        <p class="guide-card__desc">a beginner's walkthrough to install stremio and create an account.</p>
+        <div class="guide-card__meta">
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            3 min read
+          </span>
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            feb 2026
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 2: basic addon setup -->
+      <a href="guides/basic-addons.html" class="guide-card" data-tags="addons" aria-label="Read guide: basic addon setup">
+        <div class="guide-card__tag">
+          <span class="guide-card__tag-dot"></span>
+          addons
+        </div>
+        <h3 class="guide-card__title">basic addon setup</h3>
+        <p class="guide-card__desc">install and configure a minimal set of stremio addons to start streaming quickly.</p>
+        <div class="guide-card__meta">
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            5 min read
+          </span>
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            feb 2026
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 3: torrentio -->
+      <a href="guides/torrentio.html" class="guide-card" data-tags="addons" aria-label="Read guide: torrentio">
+        <div class="guide-card__tag">
+          <span class="guide-card__tag-dot"></span>
+          addons
+        </div>
+        <h3 class="guide-card__title">torrentio</h3>
+        <p class="guide-card__desc">step-by-step instructions to configure torrentio with stremio, including debrid services.</p>
+        <div class="guide-card__meta">
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            10 min read
+          </span>
+          <span class="guide-card__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            feb 2026
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="empty-state" style="display: none;">
+      no guides found for this category yet - check back soon.
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://streetle.me">streetle.me</a> · guides
+  </footer>
+
+  <script src="scripts/app.js" defer></script>
+</body>
+
+</html>
