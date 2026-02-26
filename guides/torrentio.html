@@ -51,7 +51,7 @@
   <article class="guide-article">
 
     <h2>overview</h2>
-    <p>torrentio is a the most popular stremio addon. it fetches torrents from various sources and allows you to stream them directly within stremio.</p>
+    <p>torrentio is the most popular stremio addon. it fetches torrents from various sources and allows you to stream them directly within stremio.</p>
 
     <figure class="guide-figure">
       <img src="../assets/images/torrentio.png" alt="torrentio addon interface" loading="lazy" decoding="async" />
@@ -165,6 +165,39 @@
           <strong>seeders:</strong> seeders are the number of people sharing the torrent, more seeders generally means a more stable stream.<br><br><strong>note:</strong> if you use a debrid service, sorting by seeders is irrelevant as the debrid provider likely has the highest quality stream cached already
     </div>
 
+    <h3>max results per quality</h3>
+    <p>the maximum number of results torrentio will return for each quality tier.</p>
+    
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/maxquality1.png" alt="torrentio with 'max results per quality' set to 1" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:50%;"/>
+      <figcaption class="guide-figure__caption">torrentio with 'max results per quality' set to 1</figcaption>
+    </figure>
+
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/resultsperquality.png" alt="torrentio max results per quality configuration" loading="lazy" decoding="async"/>
+      <figcaption class="guide-figure__caption">torrentio max results per quality configuration</figcaption>
+    </figure>
+
+    <h3>priority language</h3>
+    <p>if you wish to see english results you do not need to add a priority language. this is purely for people who are not fluent in english and want to prioritize streams that have their native language as an audio track.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/lang.png" alt="torrentio priority language configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio priority language configuration</figcaption>
+    </figure>
+    <h3>exclude resolutions</h3>
+    <p>exclude specific resolutions from the results.<br><br><strong>bluray remux</strong> - enable if you are on a slow connection, as these files are often 50gb+.<br><br><strong>hdr/hdr10+/dolby vision related settings</strong> - you likely know if your tv is capable of these qualities. if not, <a href="https://google.com">check your tv's specifications</a>.<br><br><strong>3d</strong> - you most likely want to enable this unless you have a 3d capable device such as a VR headset.<br><br><strong>non 3d</strong> - select this to <strong>only</strong> show 3d results. recommended for people with 3d capable setups or the stremio meta quest app.<br><br><strong>4k, 1080p, 720p, 480p</strong> - select "4k" to exclude 4k content, "1080p" to exclude 1080p content, etc.<br><br><strong>other (dvdrip, hdrip, bdrip)</strong> - enable to remove torrents ripped from blu-ray, dvd and hdtv sources (useful for only streaming-app level quality or remux)<br><br><strong>cam/screener</strong> - enable if you don't want to see low quality torrents. these are often somebody recording the movie in a cinema with poor audio and video quality.<br><br><strong>unknown</strong> - not recommended to enable as niche content without a proper resolution tag may be excluded from results.</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/exclude-resolutions.png" alt="torrentio exclude resolutions configuration" loading="lazy" decoding="async" />
+      <figcaption class="guide-figure__caption">torrentio exclude resolutions configuration</figcaption>
+    </figure>
+
+    <h3>video size limit</h3>
+    <p>directly from the torrentio page: 'returned videos cannot exceed this size, use comma to have different size for movies and series. examples: 5GB ; 800MB ; 10GB,2GB'</p>
+    <figure class="guide-figure">
+      <img src="../assets/images/torrentio/videosizelimit.png" alt="torrentio video size limit configuration"/>
+      <figcaption class="guide-figure__caption">torrentio video size limit configuration</figcaption>
+    </figure>
+
     <h3>debrid provider</h3>
     <p>select the debrid service you wish to use (real-debrid, torbox, etc.) or select "none" if you do not use one. a debrid service will be more stable as it doesn't require you to download via torrenting.</p>
     <figure class="guide-figure">
@@ -174,11 +207,11 @@
 
     <p>for more information on debrid services, see the <a href="debrid.html">debrid guide</a>.</p>
 
-    <h3>API key</h3>
-    <p>enter your debrid account API key. this field is required when a provider is selected; otherwise torrentio will be unable to use debrid services.</p>
+    <h4>api key</h4>
+    <p>enter your debrid account api key. this field is required when a provider is selected; otherwise torrentio will be unable to use debrid services.</p>
     <figure class="guide-figure">
-      <img src="../assets/images/torrentio/debrid-api.png" alt="torrentio debrid API key configuration" loading="lazy" decoding="async"/>
-      <figcaption class="guide-figure__caption">torrentio debrid API key configuration</figcaption>
+      <img src="../assets/images/torrentio/debrid-api.png" alt="torrentio debrid api key configuration" loading="lazy" decoding="async"/>
+      <figcaption class="guide-figure__caption">torrentio debrid api key configuration</figcaption>
     </figure>
 
     <h4>don't show download to debrid links</h4>
@@ -188,14 +221,14 @@
       <figcaption class="guide-figure__caption">rd download means the download (most likely) is not cached</figcaption>
     </figure>
     <figure class="guide-figure">
-      <img src="../assets/images/torrentio/torrentdownloading.png" alt="torrentio torrent downloading" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:75%;"/>
+      <img src="../assets/images/torrentio/torrentdownloading.png" alt="torrentio torrent downloading" loading="lazy" decoding="async"/>
       <figcaption class="guide-figure__caption">you will see this message when torrentio has sent a request to your debrid service to begin downloading this torrent.<br><br>if there are not enough seeders, the torrent may never be downloaded. you can check the progress in your debrid service's dashboard.</figcaption>
     </figure>
 
     <h4>dont show debrid catalog</h4>
     <p>the debrid catalog can be found at the bottom of your stremio homepage, and will display a list of <strong>all torrents</strong> that have been downloaded from your debrid service recently. this is not stremio-account specific.</p>
     <figure class="guide-figure">
-      <img src="../assets/images/torrentio/debridcatalog.png" alt="torrentio debrid catalog" loading="lazy" decoding="async" style="display:block;margin:0 auto;width:75%;"/>
+      <img src="../assets/images/torrentio/debridcatalog.png" alt="torrentio debrid catalog" loading="lazy" decoding="async"/>
       <figcaption class="guide-figure__caption">torrentio debrid catalog</figcaption>
     </figure>
     <p>if you encounter issues with specific settings, retrace your steps above, make a reddit post on <a href="https://www.reddit.com/r/StremioAddons/" target="_blank">r/StremioAddons</a> or <a href="https://discord.gg/FnnxuAAj" target="_blank">contact me on discord</a> and i'll attempt to help (no promises).</p>
