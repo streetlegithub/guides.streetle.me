@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>version info - streetle's guides</title>
+  <meta name="theme-color" content="#0f1115" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="version info - streetle's guides" />
+  <meta property="og:description" content="which stremio version to download for every platform and architecture." />
+  <meta name="description" content="which stremio version to download for every platform and architecture." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://guides.streetle.me/guides/version-info.html" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="https://guides.streetle.me/guides/version-info.html" />
+  <link rel="preload" href="../assets/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles/fonts.css" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+</head>
+
+<body>
+  <a href="../" class="back-link" aria-label="Back to all guides">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 5l-7 7 7 7" />
+    </svg>
+    all guides
+  </a>
+
+  <header class="guide-hero">
+    <div class="guide-hero__tag">
+      <span class="guide-hero__tag-dot"></span>
+      general
+    </div>
+    <h1 class="guide-hero__title">version info</h1>
+    <div class="guide-hero__meta">
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        5 min read
+      </span>
+      <span class="guide-hero__meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        feb 2026
+      </span>
+    </div>
+  </header>
+
+  <article class="guide-article">
+
+    <h2>overview</h2>
+    <p>stremio is available across many many platforms but the version you need depends on your device and its architecture. i found it confusing which one to pick (particularly on android tv) when i began using stremio so i made this guide.</p>
+    <div class="guide-callout">
+      <strong>note:</strong> all downloads can be found on the <a href="https://www.stremio.com/downloads">official stremio downloads page</a>. this guide only explains which version to select.
+    </div>
+
+    <h2>windows</h2>
+    <p>stremio offers two builds for windows. most users will need x64.</p>
+    <ul>
+      <li><strong>x64</strong> - for standard intel/amd processors. this is what the most windows PCs will use.</li>
+      <li><strong>arm</strong> - for newer arm-based windows devices such as the surface pro x, surface pro 9 (5g), thinkpad x13s, and other snapdragon-powered laptops.</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> press <code>Win + I</code> → system → about. look at "system type" - it will say "x64-based processor" or "arm-based processor".
+    </div>
+
+    <h2>macos</h2>
+    <p>there are two builds depending on your mac's chip.</p>
+    <ul>
+      <li><strong>arm (apple silicon)</strong> - for macs with an M1, M2, M3, M4 chip or later.</li>
+      <li><strong>intel</strong> - for older macs with an intel processor (pre-late 2020).</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> click the apple menu → about this mac. if the chip line says "apple M…" you need arm. if it says "intel" you need intel.
+    </div>
+
+    <h2>linux</h2>
+    <p>all linux builds are 64-bit only. choose whichever format best suits your distro and package manager.</p>
+    <ul>
+      <li><strong>flatpak</strong> - works on most distros via <a href="https://flathub.org/">flathub</a>. easiest option if you're unsure.</li>
+      <li><strong>.deb</strong> - for debian-based distros (ubuntu, pop!_os, linux mint, etc.).</li>
+      <li><strong>aur</strong> - for arch-based distros (arch, endeavouros, manjaro, etc.). install via your preferred aur helper.</li>
+      <li><strong>source code</strong> - build from source if your distro isn't covered above or you need a custom build.</li>
+    </ul>
+
+    <h2>android tv</h2>
+    <p>stremio has four android tv builds. most modern android tv devices use arm64.</p>
+    <ul>
+      <li><strong>arm</strong> - older 32-bit arm devices (also the chromecast with google tv and onn 4k models because they run a 32-bit android os).</li>
+      <li><strong>arm64</strong> - most modern android tv boxes and smart tvs (nvidia shield, fire stick 4k max etc).</li>
+      <li><strong>x86</strong> - rare 32-bit intel-based android tv devices.</li>
+      <li><strong>x86_64</strong> - rare 64-bit intel-based android tv devices.</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>tip:</strong> if you're unsure, try <strong>arm64</strong> first - it covers the vast majority of modern android tv hardware. if it doesn't install, try arm.
+    </div>
+
+    <h2>android mobile</h2>
+    <p>same architecture options as android tv but packaged for phones and tablets.</p>
+    <ul>
+      <li><strong>arm</strong> - older 32-bit phones.</li>
+      <li><strong>arm64</strong> - most phones released after ~2017.</li>
+      <li><strong>x86</strong> - very rare, mostly older chromebooks or emulators.</li>
+      <li><strong>x86_64</strong> - very rare, some chromebooks or emulators.</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> go to settings → about phone and look for "CPU" or "processor". alternatively, install <a href="https://play.google.com/store/apps/details?id=com.cpuid.cpu_z">CPU-Z</a> and check the "abi" field.
+    </div>
+
+    <h2>samsung tv</h2>
+    <p>stremio is available on samsung smart tvs running <strong>tizen OS from 2019 onwards</strong>.</p>
+    <ul>
+      <li>download directly from the samsung app store on your tv.</li>
+      <li>tvs older than 2019 are <strong>not supported</strong>.</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check your model year:</strong> go to settings → support → about this tv. the model number contains the year - e.g. UN55<strong>TU</strong>8000 = 2020 (TU series).
+    </div>
+
+    <h2>lg tv</h2>
+    <p>stremio is available on lg smart tvs running <strong>webOS from 2020 onwards</strong>.</p>
+    <ul>
+      <li>download directly from the lg content store on your tv.</li>
+      <li>tvs older than 2020 are <strong>not supported</strong>.</li>
+    </ul>
+
+    <h2>sony tv (android/google tv)</h2>
+    <p>sony tvs that run android tv or google tv can install stremio directly from the google play store or via sideloading the android tv apk.</p>
+    <ul>
+      <li>only sony tvs running <strong>android tv / google tv</strong> are supported.</li>
+      <li>older sony tvs running their proprietary os cannot run stremio.</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> go to settings → about. if you see "android tv" or "google tv" in the software info, you're good.
+    </div>
+
+    <h2>philips tv</h2>
+    <p>philips sells two types of smart tvs with different operating systems.</p>
+    <ul>
+      <li><strong>android tv / google tv models</strong> - full stremio support. install from the play store or sideload the android tv apk.</li>
+      <li><strong>titan os models</strong> - limited stremio version only. this version has reduced functionality compared to the full android build (such as no support for torrents).</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> go to settings → about. if you see "android" or "google tv" you have the full version. if you see "titan os" you will only get the limited build. 
+    </div>
+
+    <h2>hisense tv</h2>
+    <p>hisense also ships tvs with two different operating systems.</p>
+    <ul>
+      <li><strong>android tv / google tv models</strong> - full stremio support. install from the play store or sideload the android tv apk.</li>
+      <li><strong>vidaa models</strong> - limited stremio version only. this version has reduced functionality compared to the full android build (such as no support for torrents).</li>
+    </ul>
+    <div class="guide-callout">
+      <strong>how to check:</strong> go to settings → system → about. if you see "android" or "google tv" you have the full version. if you see "vidaa" you will only get the limited build.
+    </div>
+
+    <h2>steam deck</h2>
+    <p>the steam deck runs a modified arch linux (steamos), so use the <strong>flatpak</strong> version.</p>
+    <ul>
+      <li>switch to desktop mode (hold the power button → switch to desktop).</li>
+      <li>open the "discover" app store and search for stremio, or install via the terminal with <code>flatpak install flathub com.stremio.Stremio</code>.</li>
+    </ul>
+
+    <h2>ios</h2>
+    <p>there is no native stremio app for ios without sideloading as of feb 2026 (due to apple removing the stremio lite app from both ios and appletv stores). the only option is a <strong>limited web version</strong>.</p>
+    <ul>
+      <li>open <a href="https://web.stremio.com">web.stremio.com</a> in safari.</li>
+      <li>tap the 3 dots in the bottom right → press the share button → view more → "add to home screen" to create a web app shortcut (ensure 'open as web app' is enabled).</li>
+      <li>this version <strong>cannot stream torrents</strong> - it only works with http streams, which means it is only useful if you use a <a href="debrid.html">debrid service</a>.</li>
+    </ul>
+
+    <h2>meta quest</h2>
+    <p>stremio is available on meta quest headsets in two modes.</p>
+    <ul>
+      <li><strong>vr version</strong> - immersive virtual cinema experience for watching content in vr.</li>
+      <li><strong>2d version</strong> - flat panel mode, behaves like a standard android app inside the headset.</li>
+    </ul>
+
+    <h2>pico</h2>
+    <p>stremio is available on pico vr headsets in two modes.</p>
+    <ul>
+      <li><strong>vr version</strong> - immersive virtual cinema experience for watching content in vr.</li>
+      <li><strong>2d version</strong> - flat panel mode, behaves like a standard android app inside the headset.</li>
+    </ul>
+
+    <h2>raspberry pi 4</h2>
+    <p>the raspberry pi 4 can run <strong>stremio os</strong> - a dedicated operating system that turns the pi into a stremio set-top box.</p>
+    <ul>
+      <li>download the <strong>raspberry pi 4 stremio os image</strong> from the stremio downloads page.</li>
+      <li>flash it to an sd card using <a href="https://www.raspberrypi.com/software/">raspberry pi imager</a> or <a href="https://etcher.balena.io/">balena etcher</a>.</li>
+      <li>this is a <strong>different image</strong> from the pi 5 version - make sure you download the correct one.</li>
+    </ul>
+
+    <h2>raspberry pi 5</h2>
+    <p>the raspberry pi 5 also supports <strong>stremio os</strong>, but uses a separate image optimised for its hardware.</p>
+    <ul>
+      <li>download the <strong>raspberry pi 5 stremio os image</strong> from the stremio downloads page.</li>
+      <li>flash it to an sd card using <a href="https://www.raspberrypi.com/software/">raspberry pi imager</a> or <a href="https://etcher.balena.io/">balena etcher</a>.</li>
+      <li>do <strong>not</strong> use the pi 4 image on a pi 5 or vice versa - they are not interchangeable.</li>
+    </ul>
+
+    <h2>stremio launch on boot app</h2>
+    <p>a small companion app that automatically launches stremio as soon as your device boots up. useful for dedicated stremio setups like a tv box or projector.</p>
+    <ul>
+      <li>available on android devices only.</li>
+      <li>once installed and given proper permissions, stremio will start automatically every time the device powers on.</li>
+    </ul>
+
+  </article>
+
+  <nav class="guide-nav" aria-label="Guide navigation">
+    <a href="getting-started.html" class="guide-nav__link">
+      <span class="guide-nav__label">back to</span>
+      <span class="guide-nav__title">getting started with stremio</span>
+    </a>
+  </nav>
+
+  <footer class="site-footer">
+    <a href="https://streetle.me">streetle.me</a> · guides · <a href="https://github.com/sponsors/streetlegithub">sponsor</a>
+  </footer>
+
+  <script src="../scripts/app.js" defer></script>
+</body>
+
+</html>

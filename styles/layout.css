@@ -303,7 +303,7 @@
   font-size: .65rem;
   letter-spacing: .1em;
   color: var(--color-text-dim);
-  /* Animation — appears last */
+  /* Animation - appears last */
   opacity: 0;
   transform: translateY(10px);
   animation: footerIn .5s var(--ease-out) .8s forwards;

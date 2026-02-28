@@ -571,7 +571,7 @@
         });
       });
 
-      /* Show prices — if no currency selected, each service shows its base */
+      /* Show prices - if no currency selected, each service shows its base */
       function showPrices() {
         document.querySelectorAll('.debrid-service').forEach(service => {
           const curr = activeCurrency || service.dataset.baseCurrency;
